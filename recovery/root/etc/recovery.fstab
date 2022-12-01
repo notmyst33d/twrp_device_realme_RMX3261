@@ -35,6 +35,9 @@
 /metadata              ext4     /dev/block/by-name/metadata              flags=display=metadata
 /socko                 ext4     /dev/block/by-name/socko                 flags=display=socko;slotselect
 /odmko                 ext4     /dev/block/by-name/odmko                 flags=display=odmko;slotselect
-/data                  f2fs     /dev/block/by-name/userdata              flags=display=data
+/data                  f2fs     /dev/block/by-name/userdata              flags=display="userdata";backup=1;encryptable=footer
 /prodnv                ext4     /dev/block/by-name/prodnv                flags=display=prodnv
-/storage/sdcard0       vfat     /dev/block/mmcblk1p1                     flags=display=sdcard0
+
+# Removable storage
+/external_sd	auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1				flags=fsflags=utf8;display="Micro SDcard";storage;wipeingui;removable
+/usb-otg	auto	/dev/block/sda1	/dev/block/sda						flags=display="USB-OTG";storage;wipeingui;removable
