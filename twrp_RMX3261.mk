@@ -5,7 +5,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 
 # If you are building from OmniROM's minimal source, Inherit some common Omni stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Replace $$DEVICE$$ with your Device Name's Value.
 # Replace $$BRAND$$ with your Brand's / Manufacturer's Value.
