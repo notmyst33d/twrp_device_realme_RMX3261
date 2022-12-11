@@ -32,15 +32,9 @@ TARGET_2ND_CPU_VARIANT := generic
 # Assert
 TARGET_OTA_ASSERT_DEVICE := RMX3261
 
-# APEX
-DEXPREOPT_GENERATE_APEX_IMAGE := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := RMX3261
 TARGET_NO_BOOTLOADER := true
-
-# Display
-TARGET_SCREEN_DENSITY := 320
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -106,24 +100,5 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
-TW_BRIGHTNESS_PATH := "/sys/devices/platform/sprd_backlight/backlight/sprd_backlight/brightness"
-TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/devices/platform/sprd_backlight/backlight/sprd_backlight/brightness\"
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
-TW_INCLUDE_REPACKTOOLS := true
-HAVE_SELINUX := true
-RECOVERY_SDCARD_ON_DATA := true
-TW_NO_LEGACY_PROPS := true
-TW_DEFAULT_LANGUAGE := ru
-TW_INCLUDE_NTFS_3G := true
-TW_MAX_BRIGHTNESS := 125
-TW_DEFAULT_BRIGHTNESS := 90
-TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
-TW_NO_USB_STORAGE := false
-TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+TW_BRIGHTNESS_PATH := "/sys/devices/platform/sprd_backlight/backlight/sprd_backlight/brightness"
